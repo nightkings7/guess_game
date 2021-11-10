@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">guess</string>
+    <string-array name="range">
+        <item>0-10</item>
+        <item>0-100</item>
+        <item>0-1000</item>
+    </string-array>
+    <string name="t1">选择随机数的范围：</string>
+    <string name="t2">随机数：</string>
+    <string name="t3">你已经尝试了0次</string>
+    <string name="ed1">请输入所猜想的数字</string>
+    <string name="bt1">生成随机数</string>
+    <string name="bt2">看看猜对了么？</string>
 </resources>
