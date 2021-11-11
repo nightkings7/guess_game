@@ -15,6 +15,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Locale;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
@@ -56,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                 }
                 guess=0;
-                textGuess.setText(String.format("您已经尝试了%d次",guess));
+                textGuess.setText(String.format(Locale.getDefault(),"您已经尝试了%d次",guess));
                 textNum.setTextColor(Color.argb(255,0,0,255));
             }
         });
@@ -78,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
                 guess++;
-                textGuess.setText(String.format("您已经尝试了%d次",guess));
+                textGuess.setText(String.format(Locale.getDefault(),"您已经尝试了%d次",guess));
                 if(num>randomNum)
                 {
                     Toast.makeText(MainActivity.this,"您所输入的数字大于随机数",Toast.LENGTH_SHORT).show();
