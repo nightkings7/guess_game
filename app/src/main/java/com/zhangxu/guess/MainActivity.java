@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this,"请先生成随机数",Toast.LENGTH_SHORT).show();
                     return;
                 }
-                int num=0;
+                int num;
                 try{
                     num=Integer.parseInt(editInput.getText().toString());
                 }
