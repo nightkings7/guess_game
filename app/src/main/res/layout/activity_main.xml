@@ -37,7 +37,6 @@
         android:id="@+id/bt1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/li1"
         android:background="@drawable/bg_btn1"
         android:text="@string/bt1"
         android:textSize="20sp" />
