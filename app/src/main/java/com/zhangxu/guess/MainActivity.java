@@ -115,25 +115,21 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
-        switch (item.getItemId()){
-            case R.id.about:
-                AlertDialog.Builder builder=new AlertDialog.Builder(MainActivity.this);
-                builder.setIcon(R.mipmap.ic_launcher);
-                builder.setTitle("关于");
-                builder.setMessage("这是一个简易的猜数游戏");
-                builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+        if(item.getItemId()==R.id.about){
+               AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+               builder.setIcon(R.mipmap.ic_launcher);
+               builder.setTitle("关于");
+               builder.setMessage("这是一个简易的猜数游戏");
+               builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         dialogInterface.dismiss();
                     }
-                });
-                builder.create().show();
-                break;
-            case R.id.quit:
-                finish();
-                break;
-            default:
-                break;
+               });
+               builder.create().show();
+        }
+        else if (item.getItemId()==R.id.quit) {
+            finish();
         }
         return true;
     }
